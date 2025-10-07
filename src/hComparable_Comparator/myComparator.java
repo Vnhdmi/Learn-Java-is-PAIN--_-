@@ -47,7 +47,7 @@ public class myComparator implements Comparator<myComparator> {
         books.add(new myComparator("SQL cơ bản", "David", 2700));
         books.add(new myComparator("SQL nâng cao", "David", 3200));
         System.out.println(books);
-        books.stream().sorted(Comparator.comparing(books::)).forEach();
+//        books.stream().sorted(Comparator.comparing(books::).forEach();
         
     }
 }
