@@ -8,18 +8,16 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         studentManager action = new studentManager();
         ArrayList<student> std = new ArrayList<>();
-        get ip = new get();
         boolean run = true;
-
         do {
             System.out.println("""
-                    1.Nhap thong tin hoc sinh 
-                    2.In thong tin hien co 
+                    1.Nhap thong tin hoc sinh\s
+                    2.In thong tin hien co\s
                     3.Thoat chuong trinh
-                    """);
+                   \s""");
             switch (sc.nextInt()) {
                 case 1:
-                    action.addStudent(std, ip.inputName(sc), ip.inputAge(sc), ip.inputAvg(sc));
+                    action.addStudent(std);
                     break;
                 case 2:
                     action.displayStuden(std);

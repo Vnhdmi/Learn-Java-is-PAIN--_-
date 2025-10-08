@@ -44,7 +44,7 @@ public class get {
     }
 
     public  Double inputAvg(Scanner sc) {
-        Double avg = 0.0;
+        double avg = 0.0;
         boolean run = true;
 
         do {
@@ -53,9 +53,9 @@ public class get {
                 avg = Double.parseDouble(sc.nextLine());
                 if (avg < 0 || avg > 10) {
                     System.err.println("""
-                            Nhap diem khong hop le 
+                            Nhap diem khong hop le\s
                             0-10
-                            """);
+                           \s""");
                 } else {
                     run = false;
                 }
