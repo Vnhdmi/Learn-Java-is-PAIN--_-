@@ -21,6 +21,7 @@ public class Main {
                     break;
                 case 2:
                     action.displayStuden(std);
+
                     break;
                 case 3:
                     run = false;
