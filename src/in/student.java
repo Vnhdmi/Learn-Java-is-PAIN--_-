@@ -17,3 +17,5 @@ public class student {
                 ,this.name , this.age, this.avgScore) ;
     }
 }
+//todo tao them chuc nang xep loai hooc vien
+//todo nhap ten sinh vien va tra ve ket qua neu thay
