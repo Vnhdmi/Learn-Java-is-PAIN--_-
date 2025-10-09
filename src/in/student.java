@@ -13,7 +13,7 @@ public class student {
 
     @Override
     public String toString() {
-        return String.format("Ten hoc sinh : %s \n Tuoi : %d \n Diem trung binh %d "
+        return String.format("Ten hoc sinh : %s \n Tuoi : %d \n Diem trung binh %f "
                 ,this.name , this.age, this.avgScore) ;
     }
 }

@@ -10,16 +10,16 @@ public class Main {
         ArrayList<student> std = new ArrayList<>();
         get ip = new get();
         boolean run = true;
-
         do {
             System.out.println("""
-                    1.Nhap thong tin hoc sinh 
-                    2.In thong tin hien co 
-                    3.Thoat chuong trinh
-                    """);
-            switch (sc.nextInt()) {
+                     1.Nhap thong tin hoc sinh\s
+                     2.In thong tin hien co\s
+                     3.Thoat chuong trinh
+                    \s""");
+            int choice = Integer.parseInt(sc.nextLine());
+            switch (choice) {
                 case 1:
-                    action.addStudent(std, ip.inputName(sc), ip.inputAge(sc), ip.inputAvg(sc));
+                    action.addStudent(std);
                     break;
                 case 2:
                     action.displayStuden(std);
@@ -28,9 +28,6 @@ public class Main {
                     run = false;
                 default:
             }
-
         } while (run);
-
-
     }
 }
