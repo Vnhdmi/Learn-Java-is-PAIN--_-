@@ -3,7 +3,7 @@ package in;
 import java.util.Scanner;
 
 public class get {
-    public  String inputName(Scanner sc) {
+    public String inputName(Scanner sc) {
         String name = "";
         String regexName = "^(?=.*[a-zA-ZÀ-ỹà-ỹ])[a-zA-ZÀ-ỹà-ỹ\\s]+$";
         boolean run = true;
@@ -20,7 +20,7 @@ public class get {
         return name;
     }
 
-    public  int inputAge(Scanner sc) {
+    public int inputAge(Scanner sc) {
         int age = 0;
         boolean run = true;
 
@@ -43,7 +43,7 @@ public class get {
         return age;
     }
 
-    public  Double inputAvg(Scanner sc) {
+    public Double inputAvg(Scanner sc) {
         Double avg = 0.0;
         boolean run = true;
 
@@ -68,7 +68,6 @@ public class get {
 
         return avg;
     }
-
 
 
 }
