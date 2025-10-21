@@ -1,30 +1,19 @@
+# 1. Bỏ qua mọi thứ trong thư mục gốc
+/*
 
-### IntelliJ IDEA ###
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
+# 2. Ngoại trừ thư mục chứa source code (.java files)
+!/src/
 
-### Eclipse ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
+# 3. Ngoại trừ file .gitignore này
+!.gitignore
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+# 4. Các ngoại lệ thường gặp khác (Dù đã bị bỏ qua bởi /*, đây là để rõ ràng hơn)
+# Bỏ qua thư mục output của compiler (out)
+/out/
 
-### VS Code ###
-.vscode/
+# Bỏ qua các file cấu hình IDE (đã thấy trong Untracked files)
+.idea/
+*.iml
 
-### Mac OS ###
-.DS_Store
+# Bỏ qua thư mục "git" (nếu đây là một thư mục)
+/git/
